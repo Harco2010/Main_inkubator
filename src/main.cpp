@@ -140,7 +140,6 @@ void loop() {
   }
   
   if (millis() > serialTime * 5) {
-    
     serialTime += 500;
   }
   
