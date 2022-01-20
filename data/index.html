@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Безымянная страница</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bezi.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/wb.panel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'push', position: 'left', toggle: true});
+});
+</script>
+</head>
+<body>
+
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="Heading1" class="h1">ИНКУБАТОР</h1>
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_PanelMenu1" style="position:absolute;left:2px;top:1px;width:158px;height:36px;text-align:center;z-index:3;">
+<a href="#PanelMenu1_markup" id="PanelMenu1">МЕНЮ</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="" class="nav-link">Настройки</a></li>
+   <li role="menuitem"><a href="" class="nav-link">Командер</a></li>
+   <li role="menuitem"><a href="" class="nav-link">Программа</a></li>
+   <li role="menuitem"><a href="" class="nav-link">ПИД</a></li>
+   <li role="menuitem"><a href="" class="nav-link">Версия</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>
