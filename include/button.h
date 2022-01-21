@@ -42,7 +42,7 @@ void hum_setup() {
     if (x > interval) break;
     button_read();
     
-    EEPROM_float_read(12 + U_hum);   //чтение из епром из 10 ячейки значение переменной u_hum
+    EEPROM_float_read(12 + U_hum);   //чтение из епром из 12 ячейки значение переменной u_hum
     
     if (!button_enter) {
       delay(del);
@@ -68,7 +68,7 @@ void hum_setup() {
       lcd.clear();        //очищаем экран
     }
     
-    EEPROM_float_read(12 + U_hum);    //чтение из епром из 10 ячейки значение переменной u_hum
+    EEPROM_float_read(12 + U_hum);    //чтение из епром из 12 ячейки значение переменной u_hum
     //EEPROM.commit();
     lcd.setCursor(0, 0);
     lcd.print("hum SET ");
@@ -239,7 +239,7 @@ void bird_setup() {
     if (!button_minus) {
       x = 0;
       if (birdType <= 0)      //проверяем, если ниже или равно 0,
-        EEPROM_float_write(20, 1);  //пишем в память 5
+        EEPROM_float_write(20, 1);  //пишем в память 1
       else EEPROM_float_write(20, birdType -= 1);
       lcd.clear();
     }
